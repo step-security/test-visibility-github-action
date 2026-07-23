@@ -151,7 +151,7 @@ runs:
         echo "GOPATH=$(go env GOPATH)" >> $GITHUB_OUTPUT
 
     - name: Go cache
-      uses: actions/cache@v6
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       if: ${{ inputs.cache == 'true' && (contains(inputs.languages, 'go') || inputs.languages == 'all') }}
       id: go-cache
       with:
