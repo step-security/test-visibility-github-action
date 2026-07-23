@@ -35,8 +35,6 @@ It can help you investigate and mitigate performance problems and test failures 
 
 ### Choose an action version
 
-Starting with v3, each action release pins its default library versions instead of resolving `latest` at runtime. The action reference after `@` determines whether your workflow receives newer action releases and their pinned library versions:
-
 | Reference | Example | Advantages | Disadvantages |
 | --------- | ------- | ---------- | ------------- |
 | Moving major | `step-security/test-visibility-github-action@v3` | Automatically receives reviewed bug fixes and library bumps released within v3. It will not move to v4. | The action code and default library versions can change between workflow runs. |
